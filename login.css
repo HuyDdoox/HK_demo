@@ -1,0 +1,133 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+/* Header */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    border-bottom: 1px solid #ddd;
+}
+
+.header img {
+    height: 60px;
+    width: auto;
+}
+
+.contact {
+    font-size: 14px;
+    width: 50%;
+}
+
+.contact a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    white-space: nowrap;
+}
+
+.contact i {
+    margin-right: 6px;
+}
+
+.contact span {
+    margin-left: 15px;
+}
+
+/* Main Login Section */
+.login-container {
+    flex: 1; /* Center the login box */
+    display: flex; /* Center the login box */
+    justify-content: center;
+    align-items: center;
+}
+
+.login-box {
+    width: 400px;
+}
+
+.login-box h2 {
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    outline: none;
+
+}
+.form-group.links {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.forgot {
+    width:50%;
+    font-size: 13px;
+    color: red;
+    text-decoration: none;
+    font-weight: bold;
+}
+.create {
+    width:50%;
+    font-size: 13px;
+    color: blue;
+    text-decoration: none;
+    font-weight: bold;
+        text-align: right;
+
+
+}
+
+.btn {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    background: #d71e28;
+    color: #fff;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.btn:hover {
+    opacity: 0.9;
+}
+
+/* Footer */
+footer {
+    text-align: left;
+    padding: 10px 20px;
+    font-size: 12px;
+    color: #333;
+    border-top: 1px solid #ddd;
+    background: silver;
+    font-weight: bold;
+}

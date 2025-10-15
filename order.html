@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HK USA</title>
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="/img/HK-USA-Logo-Final-noR-wht-text.webp">
+    <!-- CSS -->
+    <link rel="stylesheet" href="/order.css">
+    <link rel="stylesheet" href="/css/all.min.css">
+</head>
+
+<body>
+    <header>
+        <!-- Top bar -->
+        <div class="top-bar">
+            <div class="left">
+                <a href="#">MIL/LEO</a>
+            </div>
+            <div class="right">
+                <a href="#">HK Webstore</a>
+                <a href="#">Find a Dealer</a>
+                <a href="/login.html">Rep Portal</a>
+            </div>
+        </div>
+
+        <!-- Nav bar -->
+        <div class="nav-bar">
+            <div class="logo">
+                <a href="/index-main.html" class="">
+                    <img src="/img/HK-USA-Logo-Final-noR-wht-text.webp" alt="Logo">
+                </a>
+            </div>
+            <nav class="menu">
+                <ul>
+                    <li><a href="#">Pistols</a></li>
+                    <li><a href="/index.html">Rifles</a></li>
+                    <li><a href="#">Knives</a></li>
+                    <li><a href="#">Company
+                            <i class="fa-solid fa-angle-down"></i>
+                        </a>
+                        <ul>
+                            <li><a href="#">About HK</a></li>
+                            <li><a href="#">Careers</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Training</a></li>
+                    <li><a href="#">Support<i class="fa-solid fa-angle-down"></i></a>
+                        <ul>
+                            <li><a href="#">Contact Us</a></li>
+                            <li><a href="#">Warranty</a></li>
+                            <li><a href="#">Manuals</a></li>
+                            <li><a href="#">Repair Auth Form</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+            <div class="search">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input type="text" placeholder="Search HK USA">
+            </div>
+        </div>
+    </header>
+
+    <div class="checkout-container">
+        <!-- Left column -->
+        <div class="checkout-left">
+            <h2>Billing Information</h2>
+
+            <form>
+                <div class="form-row">
+                    <label for="fullname">Full Name <span class="required">*</span></label>
+                    <input type="text" id="fullname" placeholder="Enter your full name">
+                </div>
+
+                <div class="form-row">
+                    <label for="phone">Phone Number <span class="required">*</span></label>
+                    <input type="text" id="phone" placeholder="Enter your phone number">
+                </div>
+
+                <div class="form-row">
+                    <label for="city">City/Province <span class="required">*</span></label>
+                    <select id="city">
+                        <option value="">Select city/province</option>
+                        <option value="hcm">Ho Chi Minh City</option>
+                        <option value="hn">Ha Noi</option>
+                    </select>
+                </div>
+
+                <div class="form-row">
+                    <label for="district">District <span class="required">*</span></label>
+                    <select id="district">
+                        <option value="">Select district</option>
+                        <option value="">District 1</option>
+                        <option value="">District 2</option>
+                        <option value="">District 3</option>
+                        <option value="">District 4</option>
+                    </select>
+                </div>
+                <div class="form-row">
+                    <label for="address">Address <span class="required">*</span></label>
+                    <input type="text" id="address" placeholder="House number, street name...">
+                </div>
+                <div class="checkbox">
+                    <label>
+                        <input type="checkbox">Ship to a different address?
+                    </label>
+                </div>
+                <div class="form-row">
+                    <label for="note">Order Notes (optional)</label>
+                    <textarea id="note" placeholder="Notes about your order..."></textarea>
+                </div>
+            </form>
+        </div>
+
+        <!-- Right column -->
+        <div class="checkout-right">
+            <h2>Your Order</h2>
+
+            <table class="order-table">
+                <thead>
+                    <tr>
+                        <th>Product</th>
+                        <th>Subtotal</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>M4A1 Full Option<br><small>x1</small></td>
+                        <td>$100</td>
+                    </tr>
+                    <tr>
+                        <td>M4A1 Full Option<br><small>x1</small></td>
+                        <td>$1000</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td>Subtotal</td>
+                        <td>$1000</td>
+                    </tr>
+                    <tr>
+                        <td>Shipping</td>
+                        <td>$25</td>
+                    </tr>
+                    <tr class="total">
+                        <td><strong>Total</strong></td>
+                        <td><strong class="price">$2025</strong></td>
+                    </tr>
+                </tfoot>
+            </table>
+
+            <!-- Payment -->
+            <h4>Select a Payment Method:</h4>
+
+            <div class="payment-box">
+                <label>
+                    <input type="radio" name="payment" value="cod" checked>
+                    <b>Cash on Delivery</b><br>
+                    <span class="desc">
+                        Pay in cash upon receiving your order.
+                    </span>
+                </label>
+            </div>
+
+            <div class="payment-box">
+                <label>
+                    <input type="radio" name="payment" value="bank">
+                    <b>Bank Transfer</b><br>
+                    <span class="desc">
+                        Please transfer to our bank account after your order has been confirmed.
+                    </span>
+                </label>
+            </div>
+
+            <button type="submit" class="btn-order">PLACE ORDER</button>
+            <p class="back-cart"><a href="/cart.html">Back to Cart</a></p>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-container">
+            <!-- Logo + menu -->
+            <div class="footer-col logo-col">
+                <img src="/img/HK-USA-Logo-Final-noR-wht-text.webp" alt="Logo" class="footer-logo">
+                <ul>
+                    <li><a href="#">Pistols</a></li>
+                    <li><a href="#">Rifles</a></li>
+                    <li><a href="#" class="highlight">Dealer Locator</a></li>
+                </ul>
+            </div>
+
+            <!-- Company -->
+            <div class="footer-col">
+                <h4>Company</h4>
+                <ul>
+                    <li><a href="#">Careers</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Forum</a></li>
+                </ul>
+                <h4>MIL/LEO</h4>
+                <ul>
+                    <li><a href="#">HK Training and Technical Service</a></li>
+                    <li><a href="#">View LE Product List</a></li>
+                </ul>
+            </div>
+
+            <!-- Shop -->
+            <div class="footer-col">
+                <h4>Shop</h4>
+                <ul>
+                    <li><a href="#" class="highlight">Web Store</a></li>
+                    <li><a href="#">Knives</a></li>
+                </ul>
+            </div>
+
+            <!-- Support -->
+            <div class="footer-col">
+                <h4>Support</h4>
+                <ul>
+                    <li><a href="#" class="highlight">Contact Us</a></li>
+                    <li><a href="#">Product Registration</a></li>
+                    <li><a href="#">Repair Authorization Form</a></li>
+                    <li><a href="#">Warranty</a></li>
+                    <li><a href="#">FAQ</a></li>
+                </ul>
+            </div>
+
+            <!-- Offers -->
+            <div class="footer-col offers">
+                <h4>Offers</h4>
+                <form>
+                    <label>Email</label>
+                    <div class="input-row">
+                        <input type="email" placeholder="Enter your email">
+                        <input type="email" placeholder="Confirm your email">
+                    </div>
+                    <button type="submit">Sign Up</button>
+                </form>
+                <div class="socials">
+                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

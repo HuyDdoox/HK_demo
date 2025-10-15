@@ -1,0 +1,465 @@
+/* Reset cơ bản */
+* {
+    box-sizing: border-box;
+    margin: auto;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/* Top bar */
+.top-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    padding: 5px 40px;
+    font-size: 14px;
+    max-width: 100%;
+    height: 40px;
+}
+
+.top-bar .left a {
+    color: red;
+    font-weight: bold;
+    text-align: center;
+}
+
+.top-bar .right a {
+    color: white;
+    text-decoration: none;
+    margin-left: 15px;
+}
+
+.top-bar .right a:hover {
+    color: red;
+}
+
+/* Nav bar logo  menu search*/
+.nav-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #3c3c3c;
+    padding: 10px 40px;
+
+}
+
+.logo img {
+    height: 50px;
+}
+
+/* Menu */
+.menu>ul {
+    list-style: none;
+    display: flex;
+    /* Sử dụng flexbox để sắp xếp các mục ngang hàng */
+}
+
+.menu>ul>li>a {
+    text-decoration: none;
+    color: white;
+    padding: 8px 15px;
+    display: inline-flex;
+    /* chữ + icon đi chung 1 hàng */
+    align-items: center;
+    /* căn giữa icon với chữ */
+    /* khoảng cách chữ với icon */
+    transition: 0.2s;
+    text-transform: uppercase;
+    white-space: nowrap;
+    /* không cho xuống dòng */
+}
+
+
+.menu ul li a i:first-child {
+    margin-left: 0;
+}
+
+.menu>ul>li {
+    position: relative;
+    /* Cho phép sử dụng thuộc tính position cho các phần tử con */
+    margin-left: 20px;
+    /* Khoảng cách giữa các mục*/
+}
+
+.menu>ul>li:first-child {
+    margin-left: 0;
+    /* Không có khoảng cách bên trái cho mục đầu tiên */
+}
+
+.menu>ul>li>a {
+    text-decoration: none;
+    color: white;
+    padding: 8px 15px;
+    display: block;
+    transition: 0.2s;
+    text-transform: uppercase;
+}
+
+.menu>ul>li>a:hover {
+    background-color: #444;
+    border-radius: 4px;
+    color: gray;
+}
+
+/* Submenu */
+.menu ul li ul {
+    display: none;
+    /* Ẩn submenu */
+    position: absolute;
+    /* Đặt vị trí tuyệt đối bám vào thẻ cha*/
+    top: 100%;
+    /* Đặt submenu ngay dưới thẻ cha */
+    left: 0;
+    /* Căn lề trái */
+    background: white;
+    /* Nền submenu */
+    min-width: 160px;
+    box-shadow: 0 4px 8px black;
+    /* Đổ bóng */
+    z-index: 1000;
+    /* Đảm bảo submenu hiển thị trên các phần tử khác */
+    list-style: none;
+    /* Bỏ dấu chấm đầu dòng */
+    padding: 0;
+    margin: 0;
+}
+
+/* Hiển thị submenu khi hover vào thẻ cha */
+.menu ul li:hover>ul {
+    display: block;
+}
+
+.menu ul li ul li {
+    margin: 0;
+}
+
+.menu ul li ul li a {
+    color: black;
+    padding: 10px 15px;
+    display: block;
+    white-space: nowrap;
+    /* Không xuống dòng */
+    text-decoration: none;
+}
+
+.menu ul li ul li a:hover {
+    background: #444;
+    color: white;
+}
+
+/* SUBMENU */
+.menu ul li ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: white;
+    min-width: 160px;
+    box-shadow: 0 4px 8px black;
+    z-index: 1000;
+    list-style: none;
+}
+
+.menu ul li:hover > ul {
+    display: block;
+}
+
+.menu ul li ul li a {
+    color: black;
+    padding: 10px 15px;
+    display: block;
+    text-decoration: none;
+}
+
+.menu ul li ul li a:hover {
+    background: #444;
+    color: white;
+}
+
+/* SEARCH */
+.search {
+    display: flex;
+    align-items: center;
+    background: white;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.search i {
+    background: #f0f0f0;
+    padding: 8px 20px;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.search input {
+    border: none;
+    outline: none;
+    background: transparent;
+    padding: 6px 10px;
+    font-size: 14px;
+    width: 180px;
+}
+
+/* FOOTER */
+footer {
+    background: #f5f5f5;
+    padding: 40px 60px;
+    color: #333;
+    width: 100%;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.footer-col {
+    flex: 1;
+    min-width: 180px;
+    margin: 10px 20px;
+}
+
+.footer-logo {
+    max-width: 90px;
+    margin-bottom: 15px;
+}
+
+.footer-col h4 {
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin: 15px 0 8px;
+}
+
+.footer-col ul {
+    list-style: none;
+    margin: 0 0 10px 0;
+}
+
+.footer-col ul li {
+    margin: 5px 0;
+}
+
+.footer-col ul li a {
+    text-decoration: none;
+    color: #555;
+    font-size: 14px;
+}
+
+.footer-col ul li a.highlight {
+    color: #d60000;
+    font-weight: bold;
+}
+
+.offers form {
+    margin-bottom: 15px;
+}
+
+.offers label {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.input-row {
+    display: flex;
+}
+
+.offers input {
+    flex: 1;
+    padding: 8px;
+    border: 1px solid #bbb;
+    border-radius: 4px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+    margin-right: 10px;
+}
+
+.offers input:last-child {
+    margin-right: 0;
+}
+
+.offers button {
+    margin-top: 10px;
+    background: #d60000;
+    color: #fff;
+    border: none;
+    padding: 10px 18px;
+    border-radius: 4px;
+    font-weight: bold;
+}
+
+.socials a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 35px;
+    height: 35px;
+    margin-right: 8px;
+    background: #d60000;
+    color: #fff;
+    border-radius: 50%;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+/* CHECKOUT */
+.checkout-container {
+    display: flex;
+    max-width: 1100px;
+    margin: 20px auto;
+}
+
+.checkout-left,
+.checkout-right {
+    background: #fff;
+    padding: 20px;
+    border-radius: 6px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: 50%;
+    margin: 10px;
+}
+
+h2 {
+    margin-bottom: 20px;
+    font-size: 18px;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 8px;
+}
+
+.form-row {
+    margin-bottom: 20px;
+}
+
+.form-row label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.form-row input,
+.form-row select,
+.form-row textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+    box-sizing: border-box;
+}
+
+textarea {
+    min-height: 80px;
+    resize: vertical;
+}
+
+.checkbox input {
+    margin-right: 10px;
+}
+
+.order-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+.order-table th,
+.order-table td {
+    padding: 10px 5px;
+    font-size: 14px;
+    text-align: left;
+}
+h2{
+    text-align: center;
+    text-transform: uppercase;
+}
+h4{
+    text-transform: uppercase;
+}
+.order-table th {
+    border-bottom: 2px solid #ddd;
+}
+
+.order-table .total td {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.price {
+    color: red;
+}
+
+/* NÚT ĐẶT HÀNG */
+.btn-order {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    background: #c62828;
+    color: #fff;
+    font-weight: bold;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.btn-order:hover {
+    background: darkred;
+}
+
+/* QUAY LẠI GIỎ HÀNG */
+.back-cart {
+    text-align: center;
+    margin-top: 15px;
+}
+
+.back-cart a {
+    color: #0073e6;
+    text-decoration: none;
+}
+
+/* THANH TOÁN (PAYMENT) */
+.payment-box {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: #fff;
+}
+
+.payment-box:hover {
+    border-color: #aaa;
+}
+
+.payment-box input {
+    margin-right: 8px;
+
+}
+
+.payment-box b {
+    color: #333;
+    font-size: 15px;
+}
+
+.payment-box .desc {
+    display: block;
+    color: #555;
+    font-size: 14px;
+    margin-top: 5px;
+}
+.checkbox label {
+    font-weight: bold;
+}
+.checkbox {
+    margin-bottom: 15px;
+}
+
