@@ -1,3 +1,4 @@
+/* Reset cơ bản */
 * {
     box-sizing: border-box;
     margin: auto;
@@ -7,7 +8,6 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
 }
-
 
 /* Top bar */
 .top-bar {
@@ -19,7 +19,6 @@ body {
     font-size: 14px;
     max-width: 100%;
     height: 40px;
-    width:100%;
 }
 
 .top-bar .left a {
@@ -45,11 +44,9 @@ body {
     align-items: center;
     background-color: #3c3c3c;
     padding: 10px 40px;
-
 }
 
 .logo img {
-    width:100%;
     height: 50px;
 }
 
@@ -151,6 +148,17 @@ body {
 .menu ul li ul li a:hover {
     background: #444;
     color: white;
+}
+/* Search */
+.search {
+    display: flex;
+    /* dùng flex để sắp xếp icon và input */
+    align-items: center;
+    background: white;
+    /* nền khung search */
+    border-radius: 20px;
+    /* bo tròn khung search */
+    overflow: hidden; /* ẩn phần thừa */
 }
 /* Search */
 .search {
@@ -306,12 +314,10 @@ footer {
 /* Responsive 70% - 30% */
 .col70 {
     width: 65%;
-    margin: 0;
-    max-height: 400px;
 }
 /* Responsive 30% - 70% */
 .col30 {
-    width: 34%;
+    width: 33%;
     margin-right: 10px;
 }
 img {
@@ -321,7 +327,7 @@ img {
 }
 .cart-table {
     width: 100%;
-    background: #f9f9f9;
+    background: #f0f0f0;
     border-collapse: collapse; /* gộp viền lại, không hở */
     padding: 10px;
 }
