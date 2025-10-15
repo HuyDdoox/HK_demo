@@ -88,6 +88,7 @@ input {
 .form-group.links {
     display: flex;
     margin-bottom: 20px;
+    margin-top: 10px;
 }
 
 .forgot {
